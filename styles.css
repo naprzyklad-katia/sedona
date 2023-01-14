@@ -86,8 +86,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 78px 370px 90px 370px;
-    display: flex;
+    padding-top: 78px;
+    padding-bottom: 90px;
+        display: flex;
     justify-content: center;
     align-items: center;
 } 
@@ -124,7 +125,7 @@ body {
 
 .nav__burger--line {
     background-color: rgba(129, 179, 210, 1);
-    Width: 23px;
+    Width: 24px;
     height: 4px;
     display: flex;
     align-items: center;
@@ -153,6 +154,7 @@ body {
 
     .nav__burger {
         display: block;
+        position: relative;
     }
 
 
@@ -182,7 +184,7 @@ body {
         padding-right: 0;
     }
 
-    .nav.active {
+    .nav--active {
         display: block;
     }
 
@@ -192,13 +194,12 @@ body {
 
     .nav__item {
         width: 100%;
-        background-color: pink;
         background: 
         linear-gradient(rgba(102, 158, 192, 1)
         ,rgba(102, 158, 192, 1)
         )  no-repeat left bottom 1px/100% 1px,
-        linear-gradient(rgba(255, 255, 255, 1)
-        ,rgba(255, 255, 255, 1)
+        linear-gradient(rgba(255, 255, 255,.2)
+        ,rgba(255, 255, 255, .2)
         ) no-repeat left bottom/100% 2px;
     
       }
@@ -218,21 +219,31 @@ body {
     }
 
     .nav__burger--active {
-        position: absolute;
-        right: 20px;
-        top: 17px;
-        background-image: url(images/burger-active.svg);
-        width: 22px;
-        height: 22px;
         z-index: 1;
     }
-    .nav__burger--line{
+
+    .nav__burger--active .nav__burger--line:first-child{
         display: none;
     }
+    .nav__burger--active .nav__burger--line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .nav__burger--active .nav__burger--line:nth-child(3){
+        transform: rotate(-45deg);
+    }
 
+    .nav__burger--active .nav__burger--line{
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -2px;
+        margin-left: -12px;
+    }
     .nav__container { 
         
     }
+
     @media (hover:hover){
     .nav__link:hover {
         color: rgba(129, 179, 210, 1);
