@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    background-color: #E7E5E5;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #FFFFFF;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+}
+
+.header {
+    position: relative;
+}
+
+.nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 56px;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.nav__item {
+    width: 20%;
+}
+
+.nav__item:nth-child(2) {
+    margin-right: 20%;
+}
+
+.nav__link {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    display: block;
+}
+
+.nav__link--current {
+    color: rgba(118, 99, 87, 1);
+}
+
+.nav__link:hover {
+    color: rgba(129, 179, 210, 1);
+}
+
+.nav-link:active {
+    color: rgba(179, 179, 179, 1);
+}
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 93px);
+    z-index: 1;
+}
+
+.header__pic {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    background-image: url(images/back-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 78px 370px 90px 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(images/decor.svg) no-repeat;
+    background-position: center;
+    height: 57px;
+}
+
+.hero__pic {
+    display: block;
+    width: 461px;
+    height: 350px;
+}
+
+.nav__burger {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    width: 72px;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 17px;
+}
+
+.nav__burger--line {
+    background-color: rgba(129, 179, 210, 1);
+    Width: 23px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.nav__burger--line:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 980px) {
+    .hero{
+        padding: 77px 154px 90px 153px;
+    }
+    .hero__pic {
+        width: 461px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 767.89px) {
+    .nav__container {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .nav__burger {
+        display: block;
+    }
+
+
+    .nav__list {
+        display: none;
+    }
+
+    .hero {
+        padding: 90px 19px 85px 19px;
+}
+
+    .hero__pic {
+        width: 282px;
+        height:214px;
+        
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #81B3D2;
+        z-index: 1;
+        display: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav__list {
+        display: block;
+    }
+
+    .nav__item {
+        width: 100%;
+        background-color: pink;
+        background: 
+        linear-gradient(rgba(102, 158, 192, 1)
+        ,rgba(102, 158, 192, 1)
+        )  no-repeat left bottom 1px/100% 1px,
+        linear-gradient(rgba(255, 255, 255, 1)
+        ,rgba(255, 255, 255, 1)
+        ) no-repeat left bottom/100% 2px;
+    
+      }
+    .nav__item--drop {
+        position: relative;
+    }
+
+    .nav__link {
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 1);
+        padding-top: 17px;
+        padding-bottom: 12px;
+        display: block;
+    }
+
+    .nav__burger--active {
+        position: absolute;
+        right: 20px;
+        top: 17px;
+        background-image: url(images/burger-active.svg);
+        width: 22px;
+        height: 22px;
+        z-index: 1;
+    }
+    .nav__burger--line{
+        display: none;
+    }
+
+    .nav__container { 
+        
+    }
+    @media (hover:hover){
+    .nav__link:hover {
+        color: rgba(129, 179, 210, 1);
+    }
+}
