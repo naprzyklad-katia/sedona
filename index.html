@@ -14,7 +14,7 @@
     <div class="container">
         <header class="header">
 
-            <div class="nav__container">
+            <div class="header__container">
                 <a href="#" class="header__logo">
                     <img src="images/logo.svg" class="header__pic" alt="city of Sedona logo" width="186" height="96">
                 </a>
@@ -34,111 +34,108 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="nav__burger nav__burger--active" type="button">
-                    <span class="nav__burger--line"></span>
-                    <span class="nav__burger--line"></span>
-                    <span class="nav__burger--line"></span>
+                <button class="header__burger header__burger--active" type="button">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
                 </button>
             </div>
             <div class="hero">
                 <img src="images/welcome.svg" alt=" welcome to sedona." class="hero__pic" width="460" height="350">
 
             </div>
+            <h1 class="visually-hidden">
+                welcome to sedona.
+            </h1>
         </header>
-        <main class="main">
-            <div class="main__title">
-                <p class="main__heading">
-                    СЕДОНА — небольшой городок в АРИЗОНЕ,<br />
-                    ЗАСЛУЖИвающий большего!
-                </p>
-                <br/>
-                <p class="main__subheading">
-                    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон !
-                </p>
-            </div>
-            <ol class="main__list">
-                <li class="main__item">
-                    <div class="main__item--text">
-                        <div class="main__item--name">
-                            НАСТОЯЩИЙ ГОРОДОК
-                        </div>
-                        <div class="main__item--about">
-                            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-                        </div>
-                    </div>
-                    <div class="main__item--image">
-                        <img class="main__item--pic" src="#" alt="Sedona city street view" width="512" height="256">
-                    </div>
-                  <ul class="main__list--inner">
-                    <li class="main__list--inner--item">
-                        <div class="main__list--inner--item--container">
-                            <img src="" alt="" class="main__list--inner--pic">
-                            <p class="main__list--inner--title">Жилье</p>
-                            <p class="main__list--inner--description"></p>
-                        </div>
-                    </li>
-                    <li class="main__list--inner--item">
-                        <div class="main__list--inner--item--container">
-                            <img src="" alt="" class="main__list--inner--pic">
-                            <p class="main__list--inner--title">Жилье</p>
-                            <p class="main__list--inner--description"></p>
-                        </div>
-                    </li>
-                    <li class="main__list--inner--item">
-                        <div class="main__list--inner--item--container">
-                            <img src="" alt="" class="main__list--inner--pic">  <!-- или svg ??-->
-                            <p class="main__list--inner--title">Жилье</p>
-                            <p class="main__list--inner--description"></p>
-                        </div>
-                    </li>
-                  </ul>
-                <li class="main__item"> 
-                        <div class="main__item--image">
-                            <img class="main__item--pic" src="#" alt="Sandstone Devils Bridge Vew" width="512" height="256">
-                        </div>
-                        <div class="main__item--text">
-                            <div class="main__item--name">
-                                ТАМ ЕСТЬ Мост дьявола
+        <main class="main">  <!--independent block -->
+            <section class="about"> <!--independent block -->
+                <div class="about__heading"> 
+                    <h2 class="h2 h2--bottom-offset">
+                        СЕДОНА — небольшой городок в АРИЗОНЕ,
+                        ЗАСЛУЖИвающий большего!
+                    </h2>
+                    <p class="default-text">
+                        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон !
+                    </p>
+                </div>
+                <ol class="info"> <!--independent block -->
+                    <li class="info__item">
+                        <div class="promo"> <!--independent block -->
+                            <div class="promo__descr"> 
+                                <h3 class="h2 promo__title"> <!-- p.block's element for styling -->
+                                    НАСТОЯЩИЙ ГОРОДОК
+                                </h3>
+                                <span class="promo__number">
+                                    — №1 —
+                                </span>
+                                <p class="promo__text">
+                                    СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                                </p>
                             </div>
-                            <!-- <span class="main__item--number"></span> -->
-                            <div class="main__item-about">
-                                Да, по нему можно пройти! Если вы осмелитесь, конечно 
-                            </div>                          
+                            <img class="promo__pic" src="images/sedonaStreet.jpg" alt="Sedona city street view" width="800" height="256">
                         </div>
-                </li>
-                <li class="main__item">
-                        <div class="main__item--text">
-                            <div class="main__item--name">
-                                НЕБОЛЬШАЯ ПЛОЩАДЬ                            
+                        <ul class="info__inner">
+                            <li class="info__inner-item">
+                                <img src="images/info_HousePic.svg" alt="imagery decorative element house" class="info__inner-pic" width="80" height="73">
+                                <h4 class="h2 info__inner-title">Жилье</h4>
+                                <p class="default-text info__inner-text">Рекомендуем пожить в настоящем мотеле, все как
+                                    в
+                                    кино!</p>
+                            </li>
+                            <li class="info__inner-item">
+                                <img src="images/info_FoodPic.svg" alt="imagery decorative element burger" class="info__inner-pic">
+                                <h4 class="h2 info__inner-title">ЕДА</h4>
+                                <p class="default-text info__inner-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                                    разочаруетесь!</p>
+                            </li>
+                            <li class="info__inner-item">
+                                <img src="images/info_SouvenirsPic.svg" alt="imagery decorative element souvenir" class="info__inner-pic">
+                                <h4 class="h2 info__inner-title">СУВЕНИРЫ</h4>
+                                <p class="default-text info__inner-text">Не только китайского,
+                                    но и местного производства!</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="info__item">
+                        <div class="promo">
+                            <img class="promo__pic" src="images/Devils.jpg" alt="Sedona city Devils bridge view" width="800" height="256">
+                            <div class="promo__descr">
+                                <h3 class="h2 promo__title">
+                                    ТАМ ЕСТЬ Мост дьявола
+                                </h3>
+                                <span class="promo__number">
+                                    — №2 —
+                                </span>
+                                <p class="promo__text">
+                                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                                </p>
                             </div>
-                            <!-- <span class="main__item--number">— №3 —</span> -->
-                            <div class="main__item--about">
-                                ВСЕ интересные места находятся очень близко 
-                            </div>                          
                         </div>
-                </li>
-                <li class="main__item">
-                    <div class="main__item--text">
-                        <div class="main__item--name">
-                            КРАСИВАЯ ДОРОГА
-                        </div>
-                        <!-- <span class="main__item--number">— №4 —</span> -->
-                        <div class="main__item--about">
-                            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!                        </div>                          
-                    </div>
-                </li>
-                <li class="main__item">
-                    <div class="main__item--text">
-                        <div class="main__item--name">
-                            МАЛО ТУРИСТОВ                        
-                        </div>
-                        <!-- <span class="main__item--number">— №5 —</span> -->
-                        <div class="main__item--about">
-                            Большинство едет в гранд каньон и толпится там 
-                        </div>                          
-                    </div>
-                </li>
-              </ol>
+                    </li>
+                    <li class="info__item">
+                        <h3 class="h2 info__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                        <span class="info__number default-text">
+                            — №3 —
+                        </span>
+                        <p class="default-text info__text">ВСЕ интересные места находятся очень близко</p>
+                    </li>
+                    <li class="info__item">
+                        <h3 class="h2 info__title">КРАСИВАЯ ДОРОГА </h3>
+                        <span class="info__number default-text">
+                            — №4 —
+                        </span>
+                        <p class="default-text info__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                    </li>
+                    <li class="info__item">
+                        <h3 class="h2 info__title">МАЛО ТУРИСТОВ</h3>
+                        <span class="info__number default-text">
+                            — №5 —
+                        </span>
+                        <p class="default-text info__text">Большинство едет в гранд каньон и толпится там</p>
+                    </li>
+                </ol>
+            </section>
         </main>
     </div>
 </body>
