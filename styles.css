@@ -340,6 +340,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     flex-shrink: 0;
+    width: 33.333%;
 }
 
 .promo__title {
@@ -364,9 +365,9 @@ body {
     margin-bottom: 10px;
 }
 
-/* .info__title:nth-child(n+3){
+.info__title:nth-child(n+3){
     max-width: 400px;
-} */
+}
 
 .info__item {
     display: inline-block;
@@ -391,5 +392,11 @@ body {
     .info__inner-item:first-child {
         list-style-image: url(images/info_HousePic_mobile.svg);
     }
-
+    .promo {
+        flex-direction: column;
+    }
+    
+    .info__title:nth-child(n+3){
+        background-color: #D6D6D6;
+    }
 }
