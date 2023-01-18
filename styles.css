@@ -339,6 +339,7 @@ body {
     padding: 52px 50px 51px 50px;
     color: #fff;
     text-transform: uppercase;
+    flex-shrink: 0;
 }
 
 .promo__title {
@@ -356,4 +357,39 @@ body {
 
 .promo__pic {
     object-fit: cover;
+}
+
+.info__title {
+    margin-top: 63px;
+    margin-bottom: 10px;
+}
+
+/* .info__title:nth-child(n+3){
+    max-width: 400px;
+} */
+
+.info__item {
+    display: inline-block;
+    text-align: center;
+}
+
+.info__text {
+    margin-top: 21px;
+}
+
+@media (max-width: 767.89px) {
+
+    .info__inner {
+        flex-direction: column;
+        max-width: 284px;
+    }
+
+    .info__inner-pic {
+        display: none;
+    }
+
+    .info__inner-item:first-child {
+        list-style-image: url(images/info_HousePic_mobile.svg);
+    }
+
 }
