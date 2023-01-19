@@ -289,6 +289,10 @@ body {
     margin-bottom: 26px;
 }
 
+.h2--light{
+    color: #fff;
+}
+
 .default-text {
     font-size: 14px;
     line-height: 21px;
@@ -312,9 +316,11 @@ body {
 
 .info {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.info__inner {
+.info__inner{
     display: flex;
 }
 
@@ -328,12 +334,15 @@ body {
     margin-bottom: 21px;
 }
 
+.info__number{
+    margin-bottom: 21px;
+}
+
 .promo {
     display: flex;
 }
 
 .promo__descr {
-    max-width: 400px;
     text-align: center;
     background-color: #81B3D2;
     padding: 52px 50px 51px 50px;
@@ -350,6 +359,9 @@ body {
 
 .promo__number {
     margin-bottom: 21px;
+    Font-size: 14px;
+    line-height: 21px;
+    color: #fff;
 }
 
 .promo__text {
@@ -358,20 +370,26 @@ body {
 
 .promo__pic {
     object-fit: cover;
+    width: 66.666%;
+    height: auto;
 }
+
 
 .info__title {
     margin-top: 63px;
     margin-bottom: 10px;
-}
-
-.info__title:nth-child(n+3){
-    max-width: 400px;
+    font-weight: 700;
+    Font-size: 21px;
+    line-height: 26px;
 }
 
 .info__item {
-    display: inline-block;
     text-align: center;
+}
+
+.info__item--narrow{
+    width: 33.333%;
+    padding: 73px 66px 51px 66px;
 }
 
 .info__text {
@@ -392,11 +410,8 @@ body {
     .info__inner-item:first-child {
         list-style-image: url(images/info_HousePic_mobile.svg);
     }
-    .promo {
-        flex-direction: column;
-    }
-    
-    .info__title:nth-child(n+3){
+
+    .info__title:nth-child(n+3) {
         background-color: #D6D6D6;
     }
 }
