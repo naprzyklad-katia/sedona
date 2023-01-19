@@ -355,11 +355,14 @@ body {
     margin-bottom: 21px;
     Font-size: 14px;
     line-height: 21px;
-    color: #fff;
+    /* color: #fff; /* needed here font color or not? - color inheritance */
+    display: block;
 }
 
 .promo__text {
-    margin-top: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase; 
 }
 
 .promo__pic {
