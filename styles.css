@@ -166,6 +166,7 @@ body {
     .hero {
         padding-top: 90px;
         padding-bottom: 85px;
+        margin-bottom: 32px;
     }
 
     .hero__pic {
@@ -271,6 +272,13 @@ body {
     text-align: center;
 }
 
+@media (max-width: 767.89px) {
+    .about__heading {
+        max-width: 300px;
+        margin: 0 auto 25px auto;
+    }
+}
+
 .h2 {
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: 700;
@@ -295,6 +303,12 @@ body {
     text-transform: uppercase;
 }
 
+@media (max-width: 767.89px) {
+    .default-text {
+        margin-bottom: 36px;
+    }
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -312,6 +326,12 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 767.89px) {
+    .promo {
+        flex-direction: column;
+    }
 }
 
 .info__inner {
@@ -346,6 +366,14 @@ body {
     width: 33.333%;
 }
 
+@media (max-width: 767.89px) {
+
+    .promo__descr {
+        padding: 54px 18px 18px 40px;
+        width: 100%
+    }
+}
+
 .promo__title {
     color: #fff;
     margin-bottom: 26px;
@@ -362,13 +390,24 @@ body {
 .promo__text {
     font-size: 14px;
     line-height: 21px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .promo__pic {
     object-fit: cover;
     width: 66.666%;
     height: auto;
+}
+
+@media(max-width: 769.69px) {
+    .promo__pic {
+        width: 100%;
+    }
+
+    .promo__pic--gap {
+        margin-bottom: 20px;
+    }
+
 }
 
 .info__title {
@@ -397,17 +436,22 @@ body {
     .info__inner {
         flex-direction: column;
         max-width: 284px;
+        margin: 0 18px 46px 18px;
     }
 
     .info__inner-pic {
-        display: none;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 
-    .info__inner-item:first-child {
-        list-style-image: url(images/info_HousePic_mobile.svg);
+    .info__inner-item {
+        position: relative;
+        padding: 0 0 0 47px
     }
 
-    .info__title:nth-child(n+3) {
-        background-color: #D6D6D6;
+    .info__inner-title {
+        margin-top: 8px;
     }
 }
