@@ -297,8 +297,8 @@ body {
 }
 
 .default-text {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 26px;
     color: #333;
     text-transform: uppercase;
 }
@@ -314,7 +314,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} 
 
 .info {
     list-style: none;
@@ -333,12 +333,13 @@ body {
 }
 
 .info__inner-pic {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
 }
 
 .info__inner-item {
     padding: 69px 50px 69px 51px;
     text-align: center;
+    width: 33.33%;
 }
 
 .info__inner-title {
@@ -349,10 +350,17 @@ body {
     margin-bottom: 0;
 }
 
+@media (max-width: 320px){
+    .info__inner-text{
+        width: 320px;
+    }
+}
+
 @media (max-width: 695px) {
     .info__inner-text {
         margin-bottom: 25px;
         text-align: start;
+        width: 480px;
     }
 }
 
@@ -377,7 +385,7 @@ body {
 .promo__descr {
     text-align: center;
     background-color: #81B3D2;
-    padding: 52px 50px 51px 50px;
+    padding: 54px 50px 51px 50px;
     color: #fff;
     text-transform: uppercase;
     flex-shrink: 0;
@@ -395,7 +403,8 @@ body {
 
 .promo__title {
     color: #fff;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
+    padding: 0 30px 0 30px;
 }
 
 .promo__number {
@@ -450,6 +459,8 @@ body {
     padding: 73px 66px 51px 66px;
 }
 
+
+
 @media (max-width: 695px) {
     .info__item--narrow {
         padding: 24px 18px 0 18px;
@@ -493,3 +504,52 @@ body {
         margin-bottom: 16px;
     }
 }
+
+.help__heading{
+    text-align: center;
+    margin: 0 auto 40px auto;
+    max-width: 435px; 
+}
+
+.btn{
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none; 
+    background-color: none;
+    font: 21px/26px 'PT Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: unset;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .btn--primaгry{
+    background-color: #81B3D2;
+    color: #fff;
+  }
+  .btn--primaгry:hover{
+    background-color: #669EC0;
+  }
+  .btn--primaгry:active{
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .btn--size-large{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .btn--fixed-width{
+    width: 458px;
+  }
+
+  .help--offset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
