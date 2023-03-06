@@ -546,6 +546,13 @@ body {
     width: 458px;
   }
 
+  @media (max-width: 695px){
+    .btn--fixed-width{
+        width: 284px;
+      }
+  }
+
+
   .help--offset{
     display: flex;
     justify-content: center;
