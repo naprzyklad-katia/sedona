@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Sedona</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" class="header__pic" alt="city of Sedona logo" width="186" height="96">
+                </a>
+                <nav class="nav nav--active">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--drop ">
+                            <a href="#" class="nav__link nav__link--current">главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">фото и видео</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">форма отзыва</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">html academy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger header__burger--active" type="button">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+            <div class="hero">
+                <img src="images/welcome.svg" alt=" welcome to sedona." class="hero__pic" width="460" height="350">
+
+            </div>
+            <h1 class="visually-hidden">
+                welcome to sedona.
+            </h1>
+        </header>
+        <main class="main"> <!--independent block -->
+            <section class="about"> <!--independent block -->
+                <div class="about__heading">
+                    <h2 class="h2 h2--bottom-offset">
+                        СЕДОНА — небольшой городок в АРИЗОНЕ,
+                        ЗАСЛУЖИвающий большего!
+                    </h2>
+                    <p class="default-text">
+                        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон !
+                    </p>
+                </div>
+                <ol class="info"> <!--independent block -->
+                    <li class="info__item">
+                        <div class="promo"> <!--independent block -->
+                            <div class="promo__descr">
+                                <h3 class="h2 promo__title"> <!-- p.block's element for styling -->
+                                    НАСТОЯЩИЙ ГОРОДОК
+                                </h3>
+                                <span class="promo__number">
+                                    — №1 —
+                                </span>
+                                <p class="promo__text">
+                                    СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                                </p>
+                            </div>
+                            <img class="promo__pic promo__pic--gap " src="images/sedonaStreet.jpg"
+                                alt="Sedona city street view" width="800" height="256">
+                        </div>
+                        <ul class="info__inner">
+                            <li class="info__inner-item">
+                                <img src="images/house80.svg" alt="imagery decorative element house"
+                                    class="info__inner-pic" width="80" height="80">
+                                <h4 class="h2 info__inner-title">Жилье</h4>
+                                <p class="default-text info__inner-text">Рекомендуем пожить в настоящем мотеле, все как
+                                    в
+                                    кино!</p>
+                            </li>
+                            <li class="info__inner-item">
+                                <img src="images/food80.svg" alt="imagery decorative element burger"
+                                    class="info__inner-pic" width="80" height="80">
+                                <h4 class="h2 info__inner-title">ЕДА</h4>
+                                <p class="default-text info__inner-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                                    разочаруетесь!</p>
+                            </li>
+                            <li class="info__inner-item">
+                                <img src="images/gift80.svg" alt="imagery decorative element souvenir"
+                                    class="info__inner-pic" width="80" height="80">
+                                <h4 class="h2 info__inner-title">СУВЕНИРЫ</h4>
+                                <p class="default-text info__inner-text">Не только китайского,
+                                    но и местного производства!</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="info__item">
+                        <div class="promo promo--order">
+                            <img class="promo__pic" src="images/Devils.jpg" alt="Sedona city Devils bridge view"
+                                width="800" height="256">
+                            <div class="promo__descr">
+                                <h3 class="h2 promo__title">
+                                    ТАМ ЕСТЬ Мост дьявола
+                                </h3>
+                                <span class="promo__number h2--light">
+                                    — №2 —
+                                </span>
+                                <p class="promo__text">
+                                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="info__item info__item--narrow info__item--muted">
+                        <h3 class="h2 info__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                        <span class="info__number default-text">
+                            — №3 —
+                        </span>
+                        <p class="default-text info__text">ВСЕ интересные места находятся очень близко</p>
+                    </li>
+                    <li class="info__item info__item--narrow info__item--muted">
+                        <h3 class="h2 info__title">КРАСИВАЯ ДОРОГА </h3>
+                        <span class="info__number default-text">
+                            — №4 —
+                        </span>
+                        <p class="default-text info__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                    </li>
+                    <li class="info__item info__item--narrow info__item--muted">
+                        <h3 class="h2  info__title">МАЛО ТУРИСТОВ</h3>
+                        <span class="info__number default-text">
+                            — №5 —
+                        </span>
+                        <p class="default-text info__text">Большинство едет в гранд каньон и толпится там</p>
+                    </li>
+                </ol>
+            </section>
+            <section class="help help--offset help--offset-bottom">
+                <div class="help__heading help__heading--offset">
+                    <h2 class="h2 h2--bottom-offset h2--fontsize">
+                        ЗАИНТЕРЕСОВАЛИСЬ?
+                    </h2>
+                    <p class="default-text help__description ">
+                        Укажите предполагаемые даты поездки,</br>
+                        и мы покажем вам лучшие предложения гостиниц в седонe
+                    </p>
+                </div>
+                <a href="#" class="btn btn--primarry btn--size-large btn--fixed-width ">
+                    НАЙТИ гостиницу
+                </a>
+            </section>
+            <section class="map">
+                <img src="images/map.svg" class="map__pic" width="1200" height="350">
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <h3 class="h2 footer__title footer__title--offset">#visitSEDONA</h3>
+                </li>
+                <li class="footer__list-item">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="images/vk.svg" alt="vk social picture" class="social__pic" width="24"
+                                    height="24">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="images/tg.svg" alt="telegram social picture" class="social__pic" width="24"
+                                    height="24">
+                            </a>
+                        </li>
+                        <li class="social__item"> 
+                            <a href="#" class="social__link">
+                                <img src="images/utube.svg" alt="utube social picture" class="social__pic" width="24"
+                                    height="24">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__list-item footer__list-item-flex">
+                    <h3 class="h2 footer__title footer-title--font footer__title--offset footer__title--offset--right">#Разработано</h3>
+                    <img src="images/developed.svg" alt="developed svg icon" class="footer__title-pic" width="27"
+                                    height="34">
+                </li>
+                </li>
+
+            </ul>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+<div class="social__link">
+
+</div>
