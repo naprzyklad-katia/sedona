@@ -601,70 +601,68 @@ body {
     object-fit: cover;
 }
 
-@media(max-width: 695px) {
+@media(max-width: 695px) {}
 
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 143px;
+}
 
-    .footer__list {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 120px;
-        padding-right: 143px;
-    }
+.footer__list-item {
+    margin-right: 87px;
+}
 
-    .footer__list-item {
-        margin-right: 87px;
-    }
+.footer__title--offset {
+    padding-top: 13px;
+    margin-right: 60px;
+}
 
-    .footer__title--offset {
-        padding-top: 13px;
-        margin-right: 60px;
-    }
+.footer__title--offset-right {
+    display: flex;
+}
 
-    .footer__title--offset-right {
-        display: flex;
-    }
+.footer__list-item-flex {
+    display: flex;
+    width: 89px;
+}
 
-    .footer__list-item-flex {
-        display: flex;
-        width: 89px;
-    }
+.footer__title--font {
+    font: 14px/21px 'PT Sans', Arial, sans-serif;
+}
 
-    .footer-title--font {
-        font: 14px/21px 'PT Sans', Arial, sans-serif;
-    }
+.footer__title-pic {
+    margin-top: 7px;
+}
 
-    .footer__title-pic {
-        margin-top: 7px;
-    }
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.social__item {
+    background-color: #5496BD;
+    display: block;
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 6px;
+    margin-bottom: 36px;
+}
 
-    .social__item {
-        background-color: #5496BD;
-        display: block;
-        width: 48px;
-        height: 48px;
-        text-decoration: none;
-        cursor: pointer;
-        text-align: center;
-        margin-right: 6px;
+.social__item:last-child {
+    margin-right: 0;
+}
 
-    }
-
-    .social__item:last-child {
-        margin-right: 0;
-
-    }
-
-    .social__link {
-        background-color: #5496BD;
-        display: block;
-        width: 48px;
-        height: 48px;
-        padding-top: 17px;
-        padding-bottom: 17px;
-    }
+.social__link {
+    background-color: #5496BD;
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
