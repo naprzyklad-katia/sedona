@@ -142,7 +142,7 @@ body {
 
 .header__burger-line:first-child {
     margin-top: 0;
-}   
+}
 
 @media (max-width: 980px) {
     .hero__pic {
@@ -295,12 +295,13 @@ body {
     margin-bottom: 32px;
 }
 
-@media (max-width:768px){
-    .h2--bottom-offset{
+@media (max-width:768px) {
+    .h2--bottom-offset {
         margin-bottom: 39px;
         margin-top: -10px;
     }
 }
+
 .h2--light {
     color: #fff;
 }
@@ -355,6 +356,11 @@ body {
     width: 33.33%;
 }
 
+@media (max-width: 768px) {
+    .info__inner-item {
+        padding: 59px 42px 54px 38px;
+    }
+}
 
 .info__inner-title {
     margin-bottom: 21px;
@@ -406,11 +412,12 @@ body {
     width: 33.333%;
 }
 
-@media (max-width: 768px){
-    .promo__pic{
+@media (max-width: 768px) {
+    .promo__pic {
         max-height: 526px;
     }
-    .promo__descr{
+
+    .promo__descr {
         padding-bottom: 7px;
     }
 }
@@ -424,8 +431,8 @@ body {
     }
 }
 
-@media (max-width: 768px){
-    .promo__descr{
+@media (max-width: 768px) {
+    .promo__descr {
         padding-bottom: 7px;
     }
 }
@@ -443,8 +450,8 @@ body {
     display: block;
 }
 
-@media (max-width:769px){
-    .promo__number{
+@media (max-width:769px) {
+    .promo__number {
         margin-bottom: 27px;
     }
 
@@ -540,30 +547,31 @@ body {
         top: 0;
     }
 
-    @media (max-width: 768px){
-        .info__inner-pic{
+    @media (max-width: 768px) {
+        .info__inner-pic {
             margin-bottom: 13px;
-            }
-        .info__item--narrow{
+        }
+
+        .info__item--narrow {
             padding: 52px 7px 53px;
         }
     }
 }
 
-    .info__inner-item {
-        position: relative;
-        padding: 8px 0 0 47px;
-        width: 100%;
-    }
+.info__inner-item {
+    position: relative;
+    padding: 8px 0 0 47px;
+    width: 100%;
+}
 
-    .info__inner-item{
-        padding-bottom: 43px;
-    }
+.info__inner-item {
+    padding-bottom: 43px;
+}
 
-    .info__inner-title {
-        text-align: start;
-        margin-bottom: 16px;
-    }
+.info__inner-title {
+    text-align: start;
+    margin-bottom: 16px;
+}
 
 
 .help__heading {
