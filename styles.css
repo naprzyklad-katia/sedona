@@ -410,6 +410,9 @@ body {
     .promo__pic{
         max-height: 526px;
     }
+    .promo__descr{
+        padding-bottom: 7px;
+    }
 }
 
 @media (max-width: 695px) {
@@ -423,7 +426,7 @@ body {
 
 @media (max-width: 768px){
     .promo__descr{
-        padding-top: 53px;
+        padding-bottom: 7px;
     }
 }
 
@@ -462,11 +465,10 @@ body {
 @media(max-width: 768px) {
     .promo__pic {
         width: 100%;
-        max-height: 256px;
     }
 
     .promo__pic--gap {
-        margin-bottom: 28px;
+        /* margin-bottom: 28px; */
         width: 100%;
     }
 }
