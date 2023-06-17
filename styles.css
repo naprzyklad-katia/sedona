@@ -271,7 +271,7 @@ body {
 
 .about__heading {
     max-width: 550px;
-    margin: 0 auto 44px auto;
+    margin: 0 auto 42px auto;
     text-align: center;
 }
 
@@ -346,28 +346,44 @@ body {
     display: flex;
 }
 
+@media (max-width: 586px){
+    .info__inner {
+        flex-direction: column;
+        padding: 24px 18px;
+    }
+}
+
 .info__inner-pic {
-    margin-bottom: 26px;
+    margin-bottom: 15px;
 }
 
 .info__inner-item {
-    padding: 69px 50px 69px 51px;
+    padding: 70px 50px;
     text-align: center;
     width: 33.33%;
 }
 
 @media (max-width: 768px) {
     .info__inner-item {
-        padding: 59px 42px 54px 38px;
+        padding: 60px 33px;
+    }
+}
+
+@media (max-width: 586px) {
+    .info__inner-item {
+        padding: 0;
+        width: 100%;
     }
 }
 
 .info__inner-title {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
 }
 
 .info__inner-text {
     margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width: 320px) {
@@ -500,7 +516,7 @@ body {
 
 .info__item--narrow {
     width: 33.333%;
-    padding: 60px 53px 40px;
+    padding: 60px 53px 45px;
 }
 
 .info__item--muted {
@@ -528,11 +544,6 @@ body {
         flex-direction: column;
     }
 
-    .info__inner {
-        flex-direction: column;
-        padding: 0 18px 28px 18px;
-    }
-
     .info__text {
         border-bottom: 1px solid #D6D6D6;
         padding-bottom: 12px;
@@ -558,25 +569,9 @@ body {
     }
 }
 
-.info__inner-item {
-    position: relative;
-    padding: 8px 0 0 47px;
-    width: 100%;
-}
-
-.info__inner-item {
-    padding-bottom: 43px;
-}
-
-.info__inner-title {
-    text-align: start;
-    margin-bottom: 16px;
-}
-
-
 .help__heading {
     text-align: center;
-    margin: 0 auto 44px auto;
+    margin: 0 auto 48px auto;
     max-width: 435px;
 }
 
@@ -610,10 +605,9 @@ body {
 }
 
 .btn--size-large {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-}
+    padding-top: 12px;
+    padding-bottom: 19px;
+} 
 
 .btn--fixed-width {
     width: 458px;
@@ -639,11 +633,11 @@ body {
 }
 
 .help--offset-bottom {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
 }
 
 .map {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 }
 
 .map__pic {
@@ -661,14 +655,12 @@ body {
     padding-left: 120px;
     padding-right: 143px;
 }
-
-.footer__list-item {
-    margin-right: 87px;
+.footer__list-item{
+    margin-right: 19px;
 }
 
 .footer__title--offset {
     padding-top: 13px;
-    margin-right: 60px;
 }
 
 .footer__title--offset-right {
